@@ -1,0 +1,329 @@
+/* colors: https://coolors.co/29339b-74a4bc-b6d6cc-f1fec6-ff3a20 */
+/* Add a background color to the body */
+body {
+  background-color: #F1FEC6;
+}
+
+/* Add a margin and padding to the main container */
+#main {
+  margin: 0 auto;
+  padding: 20px;
+  height : 1000px;
+  color: #201E50;
+  display: grid;
+  grid-template-areas:
+    'a'
+    'b';
+ gap: 20px;
+ font-family: 'Exo 2', sans-serif;
+
+}
+
+
+/* Style the TV show divs */
+.showdiv {
+  background-color: #74A4BC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Style the TV show title */
+.showtitle {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  color: #29339B
+}
+#genre{
+  /* font-family: 'Exo 2 , sans-serif'; */
+  grid-area: a;
+  font-size: 14px;
+
+} 
+
+#summary{
+  display: inline-block;
+  /* font-family: 'Exo 2 , sans-serif'; */
+  grid-area: b;
+  font-size: 15px;
+
+}
+
+#rating{
+  font-family: 'Exo 2', sans-serif;
+  grid-area: c;
+  font-size: 14px;
+
+}
+#image{
+  grid-area: d;
+  display: inline-block;
+  max-width: 500px;
+}
+
+/* Style the episode list */
+
+main > div  ol{
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 400px;
+  margin: right;
+  max-width: 200px;
+  font-size: 17px;
+  display: inline-block;
+  color:#43288d
+
+}
+
+
+
+/* Style the episode links */
+
+
+/* Style the lightbox */
+#lightbox {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.8);
+  display:none;
+}
+
+/*lightbox content*/
+#lbName{
+  font-family: 'Exo 2', sans-serif;
+  color:#F1FEC6;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+#lbImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 40px;
+  border: 5px solid #FFFFFF;
+  
+}
+#lbSummary{
+  font-family: 'Exo 2', sans-serif;
+  color:#74A4BC;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+/* Style the h1 */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Righteous', cursive;
+  color: #74A4BC;
+  -webkit-text-stroke: .9px  #29339B;
+}
+
+/* Style the search bar */
+#search {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-left: 25%;
+}
+
+/* Style the search button */
+#button {
+  width: wrap;
+  background-color: #FF3A20;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0px;  
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 40%;
+  font-weight: bold;
+}
+#button:hover{
+  background-color: #ffffff;
+  color:#FF3A20;  
+}
+
+
+@media (min-width: 380px){
+/* colors: https://coolors.co/29339b-74a4bc-b6d6cc-f1fec6-ff3a20 */
+/* Add a background color to the body */
+body {
+  background-color: #F1FEC6;
+}
+
+/* Add a margin and padding to the main container */
+#main {
+  margin: 0 auto;
+  padding: 20px;
+  height : 1000px;
+  color: #201E50;
+  display: grid;
+  grid-template-areas:
+    'a b' 
+    'c d';
+ gap: 20px;
+}
+
+
+/* Style the TV show divs */
+.showdiv {
+  background-color: #74A4BC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Style the TV show title */
+.showtitle {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  color: #29339B
+}
+#genre{
+  /* font-family: 'Exo 2 , sans-serif'; */
+  grid-area: a;
+  font-size: 20px;
+
+} 
+
+#summary{
+  display: inline-block;
+  /* font-family: 'Exo 2 , sans-serif'; */
+  grid-area: b;
+  font-size: 22px;
+
+}
+
+#rating{
+  font-family: 'Exo 2', sans-serif;
+  grid-area: c;
+  font-size: 20px;
+
+}
+#image{
+  grid-area: d;
+  display: inline-block;
+  width: 450px;
+}
+
+/* Style the episode list */
+
+main > div  ol{
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 450px;
+  margin: right;
+  max-width: 200px;
+  font-size: 20px;
+  display: inline-block;
+  color:#43288d
+}
+
+main > div  ol li{
+  margin: 7px;
+}
+main > div  ol li:hover{
+  color: rgb(37, 47, 151);
+  cursor: pointer;
+  -webkit-text-stroke: .2px  black;
+  text-decoration: underline #FF3A20;
+}
+
+
+/* Style the lightbox */
+#lightbox {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.8);
+  display:none;
+}
+
+/* Style the lightbox content */
+#lbImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 40px;
+  border: 5px solid #FFFFFF;
+
+}
+#lbSummary{
+  font-family: 'Exo 2', sans-serif;
+  color:#74A4BC;
+  font-size: 20px;
+  text-align: center;
+  padding: 40px;
+}
+
+
+/* Style the h1 */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Righteous', cursive;
+  color: #74A4BC;
+}
+
+/* Style the search bar */
+#search {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-left: 25%;
+}
+
+/* Style the search button */
+#button {
+  width: wrap;
+  background-color: #FF3A20;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0px;  
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 45%;
+  font-weight: bold;
+}
+#button:hover{
+  background-color: #ffffff;
+  color:#FF3A20;
+  border: 2px solid #FF3A20;
+}
+}
